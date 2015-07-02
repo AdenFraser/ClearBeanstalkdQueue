@@ -30,7 +30,7 @@ class ClearBeanstalkdQueueServiceProvider extends ServiceProvider {
     {
         $this->app['coandawebforms.clearbeanslakdqueue'] = $this->app->share(function($app)
         {
-            return new \CoandaCMS\CoandaWebForms\Artisan\ClearBeanstalkdQueueCommand($app);
+            return new \AdenFraser\ClearBeanstalkdQueue\Artisan\ClearBeanstalkdQueueCommand($app);
         });
 
         $this->commands('coandawebforms.clearbeanslakdqueue');
